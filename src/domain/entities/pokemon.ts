@@ -1,11 +1,24 @@
 /* eslint-disable prettier/prettier */
 export interface Pokemon {
-  id: string;
+  id: number | string;
   name: string;
   types: string[];
   avatar: string;
-  sprite: string[];
+  sprites: string[];
+  color: string;
 
-  //TODO
-  //color: string
+  games: string[];
+  stats: Stat[];
+  abilities: string[];
+  moves: Move[];
+}
+
+export interface Stat {
+  name: string;
+  value: number;
+}
+
+export interface Move {
+  name: string;
+  level: number;
 }
