@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 export interface Pokemon {
-  id: number | string;
+  id: number ;
   name: string;
   types: string[];
   avatar: string;
